@@ -1,0 +1,53 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+.container {
+    border:5px solid red;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.container__main {
+    border:5px solid blue;
+    /* Take the remaining height */
+    flex-grow: 1;
+
+    /* Layout the left sidebar, main content and right sidebar */
+    display: flex;
+    flex-direction: row;
+}
+
+.container__left {
+    border:5px solid green;
+    width: 25%;
+    flex-basis: 30%;
+}
+
+.container__middle {
+    /* Take the remaining width */
+    flex-grow: 1;
+    border:5px solid yellow;
+    flex-basis: 40%;
+}
+
+.container__right {
+    border:5px solid purple;
+    width: 30%;
+}
+
+footer {
+    border: 5px solid black;
+    height: 5%;
+    margin:auto;
+    text-align: center;
+    width: 100%;
+
+    
+    
+}
